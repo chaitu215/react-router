@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink , Link} from 'react-router-dom';
 import './style.css';
 
 class Header extends Component{
@@ -25,7 +25,8 @@ class Header extends Component{
                             </li>
                             <li>
                                 <NavLink to="/about" exact activeStyle={{color:'black'}}>About</NavLink>
-                            </li>      
+                            </li>  
+                            <li><Link to="/topics">Topics</Link></li>    
                         </ul>
                     </div>
                     <div className="clear"></div>
