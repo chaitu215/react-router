@@ -5,10 +5,10 @@ import Header from './Header'
 import Footer from './Footer'
 import Home from './Home'
 import About from './About'
+import NestedView from './NestedView'
+import {CatalogView, ProductView} from './catalog'
 import './style.css';
-import NestedView from './Nested';
 
-    //=--------
   
 class App extends Component{
     render(){
@@ -20,7 +20,10 @@ class App extends Component{
                     <Switch>
                         <Route path={"/"} exact component={Home} />
                         <Route path={"/about"} component={About} />
-                        <Route path="/nested" component={NestedView} />
+                        <Route path={"/nested"} component={NestedView} />
+                        <Route path={"/catalog"} component={CatalogView} />
+                        <Route path ={"/product/:id"} component={ProductView} />
+ 
                     </Switch>
                     </div>
                     <Footer/>

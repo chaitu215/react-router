@@ -28,7 +28,11 @@ class Header extends Component{
                             </li>  
                             <li>
                                 <NavLink to="/nested" exact activeStyle={{color:'black'}}>Nested</NavLink>
-                            </li>  
+                            </li>
+                            <li>
+                                <NavLink to="/catalog" exact activeStyle={{color:'black'}}>Catalog</NavLink>
+                            </li>
+                            
                            
                         </ul>
                     </div>
