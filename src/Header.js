@@ -32,8 +32,6 @@ class Header extends Component{
                             <li>
                                 <NavLink to="/catalog" exact activeStyle={{color:'black'}}>Catalog</NavLink>
                             </li>
-                            
-                           
                         </ul>
                     </div>
                     <div className="clear"></div>
